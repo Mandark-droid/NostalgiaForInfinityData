@@ -128,6 +128,21 @@
             "ZEN/USDT",
             "ZIL/USDT",
             "ZRX/USDT",
-        ]
+        ],    
+        "ccxt_config": {
+       "enableRateLimit": false,
+       "timeout": 60000,
+       "urls": {
+                "api": {
+                    "public": "http://34.124.213.21:9090/api/v3"
+                }
+            }
+    },
+    "ccxt_async_config": {
+        "enableRateLimit": false,
+        "rateLimit": 3100,"timeout": 60000
+    },
+    "markets_refresh_interval": 60
+
     }
 }
