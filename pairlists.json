@@ -32,11 +32,22 @@
   "exchange": {
       "name": "binance",
       "key": "",
-      "secret": "",
-      "ccxt_config": {"enableRateLimit": true},
+      "secret": "",	
+      "ccxt_config": {
+       "enableRateLimit": false,
+       "timeout": 60000,
+       "urls": {
+                "api": {
+                    "public": "http://34.124.213.217:9090/api/v3",
+		    "private": "http://34.124.213.217:9090/api/v3",
+		    "fapiPrivate": "http://34.124.213.217:9090/fapi/v1",
+		    "fapiPublic": "http://34.124.213.217:9090/fapi/v1"
+                }
+            }
+    },
       "ccxt_async_config": {
-          "enableRateLimit": true,
-          "rateLimit": 200
+          "enableRateLimit": false,
+          "rateLimit": 3100,"timeout": 60000
       },
       "pair_whitelist":[
     ]
