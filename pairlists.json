@@ -9,52 +9,50 @@
   "dry_run_wallet": 1000,
   "cancel_open_orders_on_exit": false,
   "unfilledtimeout": {
-        "buy": 15,
-        "sell": 15,
-        "unit": "minutes"
-    },
+    "buy": 15,
+    "sell": 15,
+    "unit": "minutes"
+  },
   "bid_strategy": {
-      "price_side": "ask",
-      "ask_last_balance": 0.0,
-      "use_order_book": false,
-      "order_book_top": 1,
-      "check_depth_of_market": {
-          "enabled": false,
-          "bids_to_ask_delta": 1
-      }
+    "price_side": "ask",
+    "ask_last_balance": 0.0,
+    "use_order_book": false,
+    "order_book_top": 1,
+    "check_depth_of_market": {
+      "enabled": false,
+      "bids_to_ask_delta": 1
+    }
   },
   "ask_strategy": {
-      "price_side": "bid",
-      "use_order_book": false,
-      "order_book_min": 1,
-      "order_book_max": 1
+    "price_side": "bid",
+    "use_order_book": false,
+    "order_book_min": 1,
+    "order_book_max": 1
   },
   "exchange": {
-      "name": "binance",
-      "key": "",
-      "secret": "",	
-      "ccxt_config": {
-       "enableRateLimit": false,
-       "timeout": 60000,
-       "urls": {
-                "api": {
-                    "public": "http://34.124.213.217:9090/api/v3",
-		    "private": "http://34.124.213.217:9090/api/v3",
-		    "fapiPrivate": "http://34.124.213.217:9090/fapi/v1",
-		    "fapiPublic": "http://34.124.213.217:9090/fapi/v1"
-                }
-            }
+    "name": "binance",
+    "key": "",
+    "secret": "",
+    "ccxt_config": {
+      "enableRateLimit": false,
+      "timeout": 60000,
+      "urls": {
+        "api": {
+          "public": "http://34.124.213.217:9090/api/v3",
+          "private": "http://34.124.213.217:9090/api/v3",
+          "fapiPrivate": "http://34.124.213.217:9090/fapi/v1",
+          "fapiPublic": "http://34.124.213.217:9090/fapi/v1"
+        }
+      }
     },
-      "ccxt_async_config": {
-          "enableRateLimit": false,
-          "rateLimit": 3100,"timeout": 60000
-      },
-      "pair_whitelist":[
-    ]
+    "ccxt_async_config": {
+      "enableRateLimit": false,
+      "rateLimit": 3100,
+      "timeout": 60000
+    },
+    "pair_whitelist": []
   },
-  "pairlists": [
-      {"method": "StaticPairList"}
-  ],
+  "pairlists": [{ "method": "StaticPairList" }],
   "dataformat_ohlcv": "jsongz",
   "dataformat_trades": "jsongz"
 }
