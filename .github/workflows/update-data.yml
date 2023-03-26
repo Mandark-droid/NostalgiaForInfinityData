@@ -43,6 +43,7 @@ jobs:
           START_DATE: ${{ steps.binance-dates.outputs.start_date }}
           END_DATE: ${{ steps.binance-dates.outputs.end_date }}
           EXCHANGE: binance
+          HTTP_PROXY: "http://34.23.109.177:3128"
         run: |
           docker-compose run --rm download-data
 
