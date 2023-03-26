@@ -2,6 +2,8 @@
 version: '3'
 services:
   download-data:
+    environment:
+      - HTTP_PROXY="http://34.23.109.177:3128"
     image: freqtradeorg/freqtrade:stable
     container_name: download-data
     volumes:
