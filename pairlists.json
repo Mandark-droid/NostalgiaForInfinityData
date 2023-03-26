@@ -38,7 +38,6 @@
       "timeout": 60000,
       "proxies": {
         "http": "http://34.23.109.177:3128"}
-      }
     },
     "ccxt_async_config": {
       "enableRateLimit": false,
