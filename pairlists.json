@@ -34,13 +34,19 @@
     "key": "",
     "secret": "",
     "ccxt_config": {
-      "enableRateLimit": false,
-      "timeout": 60000
+      "enableRateLimit": true,
+      "timeout": 60000,
+      "aiohttp_proxy": "http://http://192.168.206.128:3128",
+            "proxies": {
+                "http": "http://192.168.206.128:3128",
+                "https": "http://192.168.206.128:3128"
+        }
     },
     "ccxt_async_config": {
-      "enableRateLimit": false,
-      "rateLimit": 3100,
+      "enableRateLimit": true,
+      "rateLimit": 200,
       "timeout": 60000
+      
     },
     "pair_whitelist": []
   },
